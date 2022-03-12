@@ -28,7 +28,7 @@ sleep 1 &&
 sudo apt-get update &&
 sleep 1
 clear &&
-echo -ne $'\e[1;91m[\e[0m\e[1;77m+\e[0m\e[1;91m]\e[1;32m'Checking current status, and continuing.'\033[0m' 
+echo -ne $'\e[1;91m[\e[0m\e[1;77m+\e[0m\e[1;91m]\e[1;32m'CHECKING FOR FLAWS....'\033[0m' 
 sleep 5
 sudo apt -y install php7.4 &&
 echo -e $'\e[1;91m[\e[0m\e[1;77m+\e[0m\e[1;91m]\e[1;32m'JUST CHECKING WHATS MISSING FOR FRONTEND - STARTING INSTALL VERY SOON'\033[0m' 
