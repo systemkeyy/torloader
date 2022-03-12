@@ -37,8 +37,7 @@ sleep 3
 clear 
 read -p "INSTALL MISSING PARTS AND INSTALL LOADBALANCER? Yes/No " prompt
 if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "Yes" ]]
-then cd && cd torloader && bash dep.sh;
-;
+then cd && cd torloader && bash dep.sh -y
  else
     echo "Fuck off then"
  fi
