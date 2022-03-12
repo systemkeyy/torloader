@@ -28,7 +28,7 @@ sleep 1
 clear &&
 echo -ne $'\e[1;91m[\e[0m\e[1;77m+\e[0m\e[1;91m]\e[1;32m'TOR SOURCE CLONED - GIVE PERMISSION TO INSTALL DEVTOOLS AND WE WILL CONTINUE'\033[0m' 
 sleep 5
-chmod +x frontload.sh && chmod +x settings.sh &&
+chmod +x dep.sh && chmod +x setup.sh &&
 sleep 1 &&
 echo -e $'\e[1;91m[\e[0m\e[1;77m+\e[0m\e[1;91m]\e[1;32m'JUST CHECKING WHATS MISSING FOR FRONTEND - STARTING INSTALL VERY SOON'\033[0m' 
 echo -e $'\e[1;91m[\e[0m\e[1;77m+\e[0m\e[1;91m]\e[1;32m'CHECKING....'\033[0m' 
