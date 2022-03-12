@@ -34,12 +34,12 @@ sudo apt -y install php7.4 &&
 echo -e $'\e[1;91m[\e[0m\e[1;77m+\e[0m\e[1;91m]\e[1;32m'JUST CHECKING WHATS MISSING FOR FRONTEND - STARTING INSTALL VERY SOON'\033[0m' 
 echo -e $'\e[1;91m[\e[0m\e[1;77m+\e[0m\e[1;91m]\e[1;32m'FETCHING AND CONFIGURING MISSING PARTS'\033[0m' 
 php -v &&
-sleep 3
-clear 
-read -p "Buy SYSTEMKeyy A BEER AS A THANK YOU? Yes/No " prompt
+sleep 3 
+read -p "INSTALL ONION DOMAIN GENERATOR WHILE WE ARE DOING SETUP? Yes/No " prompt
 if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "Yes" ]]
 then
-sudo apt-get install -y php7.4-cli php7.4-json php7.4-common php7.4-mysql php7.4-zip php7.4-gd php7.4-mbstring php7.4-curl php7.4-xml php7.4-bcmath php7.4-cli php7.4-json php7.4-common php7.4-mysql php7.4-zip php7.4-gd php7.4-mbstring php7.4-curl php7.4-xml php7.4-bcmath asciidoc libsodium-dev gcc make build-essential autoconf libtool && ./setup.sh;
+sudo apt-get install -y php7.4-cli php7.4-json php7.4-common php7.4-mysql php7.4-zip php7.4-gd php7.4-mbstring php7.4-curl php7.4-xml php7.4-bcmath php7.4-cli php7.4-json php7.4-common php7.4-mysql php7.4-zip php7.4-gd php7.4-mbstring php7.4-curl php7.4-xml php7.4-bcmath asciidoc libsodium-dev gcc make build-essential autoconf libtool && cd && git clone https://github.com/cathugger/mkp224o && cd mkp224o && ./autogen.sh && ./configure && make && cd && cd torloader &&./setup.sh;
  else
-    echo "Fuck off then"
+    sudo apt-get install -y php7.4-cli php7.4-json php7.4-common php7.4-mysql php7.4-zip php7.4-gd php7.4-mbstring php7.4-curl php7.4-xml php7.4-bcmath php7.4-cli php7.4-json php7.4-common php7.4-mysql php7.4-zip php7.4-gd php7.4-mbstring php7.4-curl php7.4-xml php7.4-bcmath asciidoc libsodium-dev gcc make build-essential autoconf libtool && cd && cd torloader && ./setup.sh;
+
  fi
