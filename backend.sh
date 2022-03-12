@@ -64,8 +64,8 @@ sleep 5 &&
 clear 
 read -p "CONFIG FOR FRONTEND IS DONE - CONTINUE TO BACKEND? Yes/No " prompt
 if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "Yes" ]]
-then echo "See you on backend" && sleep 3 && exit;
-;
+then echo "See you on backend" && sleep 3 && exit -y
+
  else
     echo "Fuck off then"
  fi
