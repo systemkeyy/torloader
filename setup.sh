@@ -77,7 +77,7 @@ sleep 3
 clear 
 read -p "CONFIG FOR FRONTEND IS DONE - CONTINUE TO BACKEND? Yes/No " prompt
 if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "Yes" ]]
-then chmod +x backend.sh && bash backend.sh -y
+then cd && cd torloader && chmod +x backend.sh && bash backend.sh -y
 
  else
     echo "Fuck off then"
