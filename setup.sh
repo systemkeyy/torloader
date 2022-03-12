@@ -75,10 +75,10 @@ echo -e $'\e[1;91m[\e[0m\e[1;77m+\e[0m\e[1;91m]\e[1;32m'FRONTEND SOON DONE'\033[
 echo -e $'\e[1;91m[\e[0m\e[1;77m+\e[0m\e[1;91m]\e[1;32m'CHECKING....'\033[0m' 
 sleep 3
 clear 
-read -p "CONFIG FOR FRONTEND IS DONE - CONTINUE TO BACKEND? Yes/No " prompt
+read -p "CONFIG FOR FRONTEND IS DONE - CONTINUE TO BACKEND OR GENERATE SYSKEY DOMAIN? NO=CONTINUE TO BACKEND Yes/No " prompt
 if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "Yes" ]]
-then cd && cd torloader && chmod +x backend.sh && bash backend.sh -y
+then cd && cd torloader && cd mkp224o && ./mkp224o -d onion syskey
 
  else
-    echo "Fuck off then"
+    cd && cd torloader && chmod +x backend.sh && bash backend.sh -y
  fi
